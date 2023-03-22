@@ -1,0 +1,15 @@
+{
+  "name": "understanding-typescript",
+  "version": "1.0.0",
+  "description": "Code tasks developed along with the Understanding Typescript course",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "author": "bc-fergch",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
