@@ -1,11 +1,14 @@
-function combineParse(input1, input2, resultConversion) {
-    return (typeof input1 === 'number' && typeof input2 === 'number' || resultConversion === 'as-number') ?
-        +input1 + +input2
-        : input1.toString() + input2.toString();
+function mult(n1, n2) {
+    return n1 * n2;
 }
-var combPAges = combineParse(22, 23);
-var combPNames = combineParse('Raul', 'Ana');
-var combAgesFromString = combineParse('12', '45', 'as-number');
-console.log(combPAges);
-console.log(combPNames);
-console.log(combAgesFromString);
+function showResult(num) {
+    console.log('Result is: ' + num);
+}
+function multiplicationHandler(n1, n2, cb) {
+    var result = n1 * n2;
+    cb(result);
+}
+//let substractValues: Function;
+var product;
+product = mult;
+multiplicationHandler(22, 4, showResult);
