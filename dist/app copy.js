@@ -22,4 +22,4 @@ tech.describe();
 tech.addEmployee('Fer');
 tech.addEmployee('Ana');
 tech.printEmployees();
-//# sourceMappingURL=app.js.map
+//# sourceMappingURL=app%20copy.js.map
