@@ -9,26 +9,21 @@ add = (n1: number, n2: number) => {
     return n1+n2;
 }
 interface Named {
-    readonly name?: string;
-    outputName?: string;    //Optional property / parameter
+    readonly name: string;
 }
 interface Greetable extends Named {
     greet(phrase: string): void;
 }
 
 class Person implements Greetable {
-    name?: string;
-    age = 30;
+    name: string;
 
-    constructor(n?: string) {
-        if (n) {
-            this.name = n;
-        }
+    constructor(n: string) {
+        this.name = n;
     }
 
     greet(phrase: string) {
-        const fullPhrase = this.name ? phrase+ ' ' + name : phrase;
-        console.log(fullPhrase);
+        console.log(phrase+ ' ' + name);
     }
 }
 
