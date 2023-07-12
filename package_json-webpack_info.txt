@@ -1,0 +1,43 @@
+{
+  "name": "understanding-typescript",
+  "version": "1.0.0",
+  "description": "Code tasks developed along with the Understanding Typescript course",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server", // Instead of lite-server
+
+    // This allow us to work with webpack using the webpack.config.js file.
+    "build": "webpack"
+  
+  },
+  "author": "bc-fergch",
+  "license": "ISC",
+  "devDependencies": {
+    // This plugin help us to clean the dist folder whenever we re build our project.
+    "clean-webpack-plugin": "^4.0.0",
+    
+    "lite-server": "^2.6.1",
+
+    // Compiles our code fron TS to JS and ...
+    "ts-loader": "^9.4.4",
+    // Internally uses the typescript compiler under the hood:
+    "typescript": "^5.1.6", 
+    // it is a good practice to install a copy of typescript
+    // on each project (like here) even if we already had it 
+    // installed on our local env.
+
+    // Transform our TS code to JS & Emit a bundle JS file.
+    "webpack": "^5.88.1",
+
+    // Allows us to run webpack commands in our project.
+    "webpack-cli": "^5.1.4",
+
+    // Starts webpack under the hood: 
+    // Automatically triggers webpack to recompile when something changes
+    // and auto serves our page.
+    // This is a tool we use for spinning up a local development server 
+    // that serves our website.
+    "webpack-dev-server": "^4.15.1"
+  }
+}
